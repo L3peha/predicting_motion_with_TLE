@@ -14,6 +14,8 @@ global TLEWeinaOne;
 global TLEHaiyang;
 global TLEHaiyangOne;
 
+%% calculating coorrs via SGP4
+
 [rMKS, vMKS] = TLE2coords(TLEmks);
 [rMKSOne, vMKSOne] = TLE2coords(TLEmksOne);
 
@@ -28,6 +30,14 @@ global TLEHaiyangOne;
 
 [rHaiyang, vHaiyang] = TLE2coords(TLEHaiyang);
 [rHaiyangOne, vHaiyangOne] = TLE2coords(TLEHaiyangOne);
+%% Telemetry to coords
 
-%true ecvator enutation
+
+%% Ploting grafics
+
+plotgr(rMKS,vMKS,rMKSOne,vMKSOne,1);
+plotgr(rGonets,vGonets,rGonetsOne,vGonetsOne,2);
+plotgr(rEgipt,vEgipt,rEgiptOne,vEgiptOne,3);
+plotgr(rWeina,vWeina,rWeinaOne,vWeinaOne,4);
+plotgr(rHaiyang,vHaiyang,rHaiyangOne,vHaiyangOne,5);
 i=1;
