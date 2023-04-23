@@ -3,16 +3,15 @@ format long;
 
 init();
 
+global G;
+global M_of_E;
+global AE;
 global TLEmks;
 global TLEmksOne;
 global TLEGonets;
 global TLEGonetsOne;
 global TLEEgipt;
 global TLEEgiptOne;
-global TLEWeina;
-global TLEWeinaOne;
-global TLEHaiyang;
-global TLEHaiyangOne;
 
 [rMKS, vMKS] = TLE2coords(TLEmks);
 [rMKSOne, vMKSOne] = TLE2coords(TLEmksOne);
@@ -21,13 +20,5 @@ global TLEHaiyangOne;
 [rGonetsOne, vGonetsOne] = TLE2coords(TLEGonetsOne);
 
 [rEgipt, vEgipt] = TLE2coords(TLEEgipt);
-[rEgiptOne, vEgiptOne] = TLE2coords(TLEEgiptOne);
-
-[rWeina, vWeina] = TLE2coords(TLEWeina);
-[rWeinaOne, vWeinaOne] = TLE2coords(TLEWeinaOne);
-
-[rHaiyang, vHaiyang] = TLE2coords(TLEHaiyang);
-[rHaiyangOne, vHaiyangOne] = TLE2coords(TLEHaiyangOne);
-
 %true ecvator enutation
 i=1;
