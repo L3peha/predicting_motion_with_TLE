@@ -1,4 +1,4 @@
-function [N,Na] = eNutation(tau)
+function [N] = eNutation(tau)
 %eNutation Рассчет матрицы нутации Земли
 
 Mm = 2.355548393 + 8328.69142288*tau + 1.517952*10^-4*tau^2 + 3.103*10^-7*tau^3;

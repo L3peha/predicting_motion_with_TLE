@@ -18,7 +18,6 @@ a0 = a1 * (1 - delta1 / 3.0 - pow(delta1, 2.0) - 134.0 * pow(delta1, 3.0) / 81.0
 delta0 = delta1 * pow(a1, 2.0) / pow(a0, 2.0);
 n0__ = n0 / (1.0 + delta0);
 a0__ = a0 / (1.0 - delta0);
-s = 1.01222928;
 QOMS2T = 1.88027916 * pow(10.0, -9.0);
 
 %%
